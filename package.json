@@ -1,0 +1,28 @@
+{
+  "name": "dragonzord",
+  "version": "0.0.1",
+  "description": "bcrypt.compare as a lambda function.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "belly-button && lab -v -t 100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/continuationlabs/dragonzord.git"
+  },
+  "keywords": [
+    "lambda",
+    "bcrypt",
+    "aws"
+  ],
+  "author": "Continuation Labs <contact@continuation.io> (http://continuation.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "belly-button": "3.x.x",
+    "code": "3.x.x",
+    "lab": "11.x.x"
+  },
+  "dependencies": {
+    "bcryptjs": "2.3.0"
+  }
+}
