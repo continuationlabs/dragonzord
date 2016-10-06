@@ -1,6 +1,6 @@
 {
   "name": "dragonzord",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "bcrypt.compare as a lambda function.",
   "main": "lib/index.js",
   "scripts": {
