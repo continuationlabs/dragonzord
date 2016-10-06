@@ -1,6 +1,6 @@
 'use strict';
 
-const Bcrypt = require('bcryptjs');
+const Bcrypt = require('bcrypt');
 const Code = require('code');
 const Lab = require('lab');
 const Dragonzord = require('../lib');
@@ -39,33 +39,10 @@ describe('Dragonzord()', () => {
         value: 'foobarbaz',
         hash: Bcrypt.hashSync('foobarbaz', 1)
       }, null, (err, result) => {
-        expect(err).to.be.null();
+        expect(err).to.not.exist();
         expect(result).to.be.true();
         done();
       });
     });
-
-    // it('hashes the string supplied with the number of saltRounds', (done) => {
-    //   const plainText = 'testString';
-    //   Dragonzord.hash({ plainText, saltRounds: 1 }, null, (err, result) => {
-    //     expect(err).to.not.exist();
-    //     expect(result).to.be.a.string();
-    //     expect(result.length).to.be.greaterThan(plainText.length);
-    //     done();
-    //   });
-    // });
-    //
-    // it('callsback with an error if event.plainText not a string with length', (done) => {
-    //   Dragonzord.hash({ plainText: null }, null, (err, result) => {
-    //     expect(err).to.be.an.error(TypeError, 'you did not supply a plainText value to hash');
-    //     expect(result).to.be.null();
-    //
-    //     Dragonzord.hash({}, null, (err, result) => {
-    //       expect(err).to.be.an.error(TypeError, 'you did not supply a plainText value to hash');
-    //       expect(result).to.be.null();
-    //       done();
-    //     });
-    //   });
-    // });
   });
 });
