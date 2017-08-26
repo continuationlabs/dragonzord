@@ -1,12 +1,11 @@
 'use strict';
 
 const Bcrypt = require('bcrypt');
-const Code = require('code');
 const Lab = require('lab');
 const Dragonzord = require('../lib');
 
 const lab = exports.lab = Lab.script();
-const expect = Code.expect;
+const expect = Lab.expect;
 const describe = lab.describe;
 const it = lab.it;
 
