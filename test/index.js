@@ -19,7 +19,7 @@ describe('Dragonzord()', () => {
   describe('compare()', () => {
     it('sends back an error if event.value is not a string', (done) => {
       Dragonzord.compare({ value: 0, hash: '1234'}, null, (err, result) => {
-        expect(err).to.be.an.error(TypeError, 'you did not supply a value to compare');
+        expect(err).to.be.an.error(TypeError, 'value must be a string');
         expect(result).to.be.null();
         done();
       });
@@ -27,7 +27,7 @@ describe('Dragonzord()', () => {
 
     it('sends back an error if event.hash is not a string', (done) => {
       Dragonzord.compare({ value: '1234' }, null, (err, result) => {
-        expect(err).to.be.an.error(TypeError, 'you did not supply a hashed value to compare against');
+        expect(err).to.be.an.error(TypeError, 'hash must be a string');
         expect(result).to.be.null();
         done();
       });

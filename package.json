@@ -4,7 +4,7 @@
   "description": "bcrypt.compare as a lambda function.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "belly-button && lab -t 100 -a code -v"
+    "test": "belly-button && lab -t 100 -v"
   },
   "repository": {
     "type": "git",
