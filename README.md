@@ -3,8 +3,8 @@
 [![Current Version](https://img.shields.io/npm/v/dragonzord.svg)](https://www.npmjs.org/package/dragonzord)
 [![Build Status](https://travis-ci.org/continuationlabs/dragonzord.svg?branch=master)](https://travis-ci.org/continuationlabs/dragonzord)
 ![Dependencies](http://img.shields.io/david/continuationlabs/dragonzord.svg)
+[![belly-button-style](https://img.shields.io/badge/eslint-bellybutton-4B32C3.svg)](https://github.com/continuationlabs/belly-button)
 
-[![belly-button-style](https://cdn.rawgit.com/continuationlabs/belly-button/master/badge.svg)](https://github.com/continuationlabs/belly-button)
 
 <img src="https://raw.github.com/continuationlabs/dragonzord/master/images/green-ranger.jpg" />
 
